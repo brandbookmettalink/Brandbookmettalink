@@ -1,0 +1,10 @@
+# Arquivos temporários e rascunhos
+*.txt
+Novo(a) Documento de Texto.txt
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# PDFs pesados de referência (opcional)
+*.pdf
