@@ -1,1 +1,1560 @@
-ksksls
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mettalink — Engenharia de Software e Produtos Digitais</title>
+  <meta name="description" content="Mettalink — Estúdio de engenharia de software para empresas que precisam de produtos digitais sólidos, arquitetura escalável e sistemas de alta performance.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="splash-active">
+
+<div id="bg-image-layer" class="bg-image-layer"></div>
+<canvas id="bg-canvas"></canvas>
+
+<!-- =====================================================================
+     1. METTALINK SPLASH SCREEN (VINHETA DE ENTRADA)
+===================================================================== -->
+<div class="entry-screen" id="entryScreen">
+  <div class="entry-content" id="entryContent">
+    <div class="entry-brand">
+      <!-- Logo Icon Símbolo -->
+      <img src="Marca/mettalink-logo-symbol.svg" alt="Mettalink Símbolo" class="entry-svg" id="splashLogoSvg">
+      <!-- Wordmark METTALINK -->
+      <img src="Marca/mettalink-wordmark.svg" alt="Mettalink Wordmark" class="entry-wordmark-img" id="splashWordmark">
+    </div>
+  </div>
+</div>
+
+<!-- =====================================================================
+     2. CURSOR PERSONALIZADO (TRIÂNGULO BRILHANTE)
+===================================================================== -->
+<div id="cursor">
+  <div class="halo"></div>
+  <svg viewBox="0 0 22 22" fill="none">
+    <polygon points="11,2 20,19 2,19"/>
+  </svg>
+</div>
+
+<!-- =====================================================================
+     3. CABEÇALHO / NAV (MARCA METTALINK COM VETORES EXATOS)
+===================================================================== -->
+<header id="header">
+  <nav class="wrap">
+    <a href="#" class="logo">
+      <img src="Marca/mettalink-logo-symbol.svg" alt="Mettalink Símbolo" class="hdr__mark">
+      <img src="Marca/mettalink-wordmark.svg" alt="Mettalink Wordmark" class="hdr__name-img" height="18">
+    </a>
+  </nav>
+</header>
+
+
+
+<!-- =====================================================================
+     4. HERO SECTION (COM A LOGO COMPLETA EMPILHADA 100% VETORIZADA)
+===================================================================== -->
+<section class="hero" id="hero">
+  <div class="wrap hero-centered-wrap">
+    <!-- Logo Centralizada Ampliada com Efeito Pokébola -->
+    <div class="brand-hero-row" id="brandHeroRow">
+      <!-- Efeito Visual do Raio Azul de Energia Pokébola -->
+      <div class="pokeball-release-container" id="pokeballRelease">
+        <div class="pokeball-laser-beam"></div>
+        <div class="pokeball-flash-orb"></div>
+        <div class="pokeball-shockwave"></div>
+        <div class="pokeball-energy-sparks">
+          <span style="--angle: 0deg;"></span>
+          <span style="--angle: 45deg;"></span>
+          <span style="--angle: 90deg;"></span>
+          <span style="--angle: 135deg;"></span>
+          <span style="--angle: 180deg;"></span>
+          <span style="--angle: 225deg;"></span>
+          <span style="--angle: 270deg;"></span>
+          <span style="--angle: 315deg;"></span>
+        </div>
+      </div>
+
+      <!-- Logo Central Ampliada -->
+      <div class="hero-logo-box" id="coreVisualHero">
+        <img src="Marca/mettalink-logo-symbol.svg" alt="Mettalink Símbolo" class="hero-mark-svg">
+        <img src="Marca/mettalink-wordmark.svg" alt="Mettalink Wordmark" class="hero-wordmark-img">
+      </div>
+    </div>
+
+    <!-- Título Principal em Destaque -->
+    <h1 class="hero-animated-item">Conectando dados. <em>Simplificando</em> operações.</h1>
+
+    <!-- Slogan abaixo da marca -->
+    <p class="lead hero-animated-item">A Mettalink é um estúdio de engenharia de software para empresas que precisam de produtos digitais sólidos, arquitetura bem pensada e times que entregam sem enrolação.</p>
+  </div>
+</section>
+
+<!-- =====================================================================
+     1.5. COMO NAVEGAR — GUIA ILUSTRADO E ANIMADO (BLOCO ISOLADO)
+     Todas as classes usam o prefixo "howto-" para não colidir com
+     nenhum outro estilo já existente no site.
+===================================================================== -->
+<section id="como-navegar" class="howto-section">
+  <div class="wrap">
+
+    <div class="howto-head reveal">
+      <span class="tag">// GUIA RÁPIDO</span>
+      <h2>Como Navegar pelo Site</h2>
+      <p>Este site tem 4 mecânicas escondidas. Veja abaixo, em desenho animado, exatamente o que fazer em cada uma — depois é só rolar a página e reproduzir o gesto.</p>
+    </div>
+
+    <div class="howto-timeline">
+
+      <!-- PASSO 01 — ÍMÃ DE CONEXÃO -->
+      <div class="howto-step reveal">
+        <div class="howto-step-marker"><span>01</span></div>
+        <div class="howto-step-body">
+          <span class="howto-step-eyebrow">Seção "Quem Somos"</span>
+          <h3>Aproxime METTA e LINK</h3>
+          <p>Arraste (ou clique n)as palavras <strong>METTA</strong> e <strong>LINK</strong> até elas se encostarem. No encontro, uma descarga de energia revela o manifesto da marca.</p>
+          <div class="howto-step-hint">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+            Experimente logo na próxima seção
+          </div>
+        </div>
+        <div class="howto-step-visual">
+          <svg class="howto-anim howto-anim--magnet" viewBox="0 0 220 140" width="100%" height="100%">
+            <rect class="hm-block hm-block--left" x="16" y="52" width="66" height="36" rx="8"/>
+            <text class="hm-label hm-label--left" x="49" y="74" text-anchor="middle">METTA</text>
+            <rect class="hm-block hm-block--right" x="138" y="52" width="66" height="36" rx="8"/>
+            <text class="hm-label hm-label--right" x="171" y="74" text-anchor="middle">LINK</text>
+            <g class="hm-spark">
+              <circle cx="110" cy="70" r="3"/>
+              <circle cx="110" cy="70" r="9"/>
+              <circle cx="110" cy="70" r="16"/>
+            </g>
+            <g class="hm-cursor">
+              <path d="M0 0 L0 15 L4 11.5 L6.5 17 L9 15.8 L6.7 10.6 L12 10.4 Z" fill="#fff" stroke="#0A1F3D" stroke-width="1"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- PASSO 02 — CURSOR & DISSOLUÇÃO -->
+      <div class="howto-step howto-step--rev reveal">
+        <div class="howto-step-marker"><span>02</span></div>
+        <div class="howto-step-body">
+          <span class="howto-step-eyebrow">Topo da página</span>
+          <h3>Passe o mouse sobre a logo</h3>
+          <p>As letras do logotipo reagem ao cursor: elas se desfazem em uma nuvem de partículas e se recompõem sozinhas alguns instantes depois.</p>
+          <div class="howto-step-hint">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+            Volte ao topo e passe o cursor devagar
+          </div>
+        </div>
+        <div class="howto-step-visual">
+          <svg class="howto-anim howto-anim--dissolve" viewBox="0 0 220 140" width="100%" height="100%">
+            <text class="hd-letter" x="110" y="86" text-anchor="middle">M</text>
+            <g class="hd-particles">
+              <circle cx="80" cy="60" r="2.6"/><circle cx="95" cy="48" r="2.2"/><circle cx="112" cy="52" r="2.8"/>
+              <circle cx="130" cy="62" r="2.2"/><circle cx="140" cy="80" r="2.6"/><circle cx="120" cy="92" r="2.2"/>
+              <circle cx="100" cy="96" r="2.8"/><circle cx="84" cy="84" r="2.2"/><circle cx="108" cy="70" r="2.4"/>
+            </g>
+            <g class="hd-cursor">
+              <path d="M0 0 L0 15 L4 11.5 L6.5 17 L9 15.8 L6.7 10.6 L12 10.4 Z" fill="#fff" stroke="#0A1F3D" stroke-width="1"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- PASSO 03 — MINIGAME DE CORES -->
+      <div class="howto-step reveal">
+        <div class="howto-step-marker"><span>03</span></div>
+        <div class="howto-step-body">
+          <span class="howto-step-eyebrow">Seção "Identidade Visual"</span>
+          <h3>Estoure a esfera de cores</h3>
+          <p>Toque no botão de captura para liberar a esfera. Ela se abre e libera os pigmentos oficiais da Mettalink — colete todos agitando a tela.</p>
+          <div class="howto-step-hint">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+            Ative o botão na paleta de cores
+          </div>
+        </div>
+        <div class="howto-step-visual">
+          <svg class="howto-anim howto-anim--capture" viewBox="0 0 220 140" width="100%" height="100%">
+            <circle class="hc-orb" cx="110" cy="52" r="17"/>
+            <g class="hc-pop">
+              <circle class="hc-dot hc-dot--1" cx="110" cy="52" r="7"/>
+              <circle class="hc-dot hc-dot--2" cx="110" cy="52" r="7"/>
+              <circle class="hc-dot hc-dot--3" cx="110" cy="52" r="7"/>
+            </g>
+            <ellipse class="hc-shadow" cx="110" cy="112" rx="30" ry="6"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- PASSO 04 — LABORATÓRIO DE APLICAÇÕES -->
+      <div class="howto-step howto-step--rev reveal">
+        <div class="howto-step-marker"><span>04</span></div>
+        <div class="howto-step-body">
+          <span class="howto-step-eyebrow">Seção "Aplicações da Marca"</span>
+          <h3>Monte sua versão da logo</h3>
+          <p>Troque as variações de cor, alterne o formato do logotipo (empilhado, horizontal, marca d'água) e baixe o SVG já customizado do jeito que preferir.</p>
+          <div class="howto-step-hint">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+            Abra o painel no laboratório de marca
+          </div>
+        </div>
+        <div class="howto-step-visual">
+          <svg class="howto-anim howto-anim--lab" viewBox="0 0 220 140" width="100%" height="100%">
+            <rect class="hl-panel" x="46" y="34" width="128" height="72" rx="10"/>
+            <circle class="hl-swatch hl-swatch--1" cx="72" cy="58" r="9"/>
+            <circle class="hl-swatch hl-swatch--2" cx="100" cy="58" r="9"/>
+            <circle class="hl-swatch hl-swatch--3" cx="128" cy="58" r="9"/>
+            <rect class="hl-ring" x="63" y="49" width="18" height="18" rx="9"/>
+            <rect class="hl-bar" x="66" y="82" width="88" height="8" rx="4"/>
+            <g class="hl-download">
+              <path d="M110 96 v14 M103 103 l7 7 l7 -7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     2. QUEM SOMOS — ORIGEM DA MARCA METTALINK
+===================================================================== -->
+<section id="quem-somos">
+<div class="mtl-root">
+  <style>
+    .mtl-root, .mtl-root * { box-sizing: border-box; }
+
+    .mtl-root {
+      --mtl-white: #ffffff;
+      --mtl-blue: #2F6FED;
+      --mtl-blue-dark: #013894;
+      --mtl-blue-glow: rgba(1, 56, 148, 0.14);
+      --mtl-dark: #0A1F3D;
+      --mtl-ink: #0A1F3D;
+      --mtl-mid: #64748B;
+      --mtl-line: rgba(1, 56, 148, 0.12);
+
+      background: transparent;
+      color: var(--mtl-ink);
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: clip;
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: clamp(20px, 3vh, 40px) 0;
+    }
+
+    .mtl-root .mtl-mono {
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    /* Cabeçalho Identificador "Quem somos..." */
+    .mtl-header {
+      text-align: center;
+      margin-bottom: 28px;
+      padding: 0 20px;
+    }
+
+    .mtl-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 18px;
+      background: rgba(1, 56, 148, 0.08);
+      border: 1px solid rgba(1, 56, 148, 0.22);
+      border-radius: 30px;
+      margin-bottom: 14px;
+      backdrop-filter: blur(10px);
+      color: #013894;
+      font-weight: 700;
+    }
+
+    .mtl-badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #013894;
+      box-shadow: 0 0 12px rgba(1, 56, 148, 0.5);
+    }
+
+    .mtl-title-main {
+      font-family: 'Plus Jakarta Sans', 'Space Grotesk', sans-serif;
+      font-size: clamp(36px, 5.5vw, 56px);
+      font-weight: 800;
+      color: #0A1F3D;
+      margin: 0 0 12px 0;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    .mtl-title-sub {
+      font-size: clamp(15px, 2vw, 18px);
+      color: #475569;
+      max-width: 660px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .mtl-title-sub strong {
+      color: #013894;
+      font-weight: 700;
+    }
+
+    .mtl-track {
+      position: relative;
+      height: clamp(520px, 70vh, 640px);
+      width: 100%;
+    }
+
+    .mtl-pin {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 24px;
+      background: #FFFFFF;
+      border: 1px solid rgba(1, 56, 148, 0.12);
+      box-shadow: 0 25px 60px rgba(1, 31, 61, 0.10);
+    }
+
+    .mtl-ambient {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(60% 45% at 50% 55%, var(--mtl-blue-glow) 0%, rgba(1,56,148,0) 70%);
+      opacity: 0.6;
+    }
+
+    .mtl-stage {
+      position: relative;
+      width: min(1100px, 92vw);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mtl-hint {
+      position: absolute;
+      bottom: 12%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      opacity: 0;
+      color: var(--mtl-mid);
+      font-size: 13px;
+      pointer-events: none;
+      z-index: 15;
+    }
+    .mtl-hint svg { width: 26px; height: 14px; animation: mtl-hint-pulse 1.8s ease-in-out infinite; color: #2F6FED; }
+    @keyframes mtl-hint-pulse {
+      0%, 100% { transform: scaleX(1); opacity: .5; }
+      50% { transform: scaleX(0.85); opacity: 1; }
+    }
+
+    .mtl-wordblock {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .mtl-wordrow {
+      position: relative;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: clamp(42px, 8vw, 92px);
+      line-height: 1;
+    }
+
+    .mtl-word { display: flex; gap: 5px; will-change: transform; }
+    .mtl-word span { display: inline-block; will-change: transform, opacity; pointer-events: none; }
+
+    .mtl-word--metta { color: #3D3D3D; }
+    .mtl-word--link  { color: #013894; }
+
+    .mtl-word--metta, .mtl-word--link {
+      cursor: grab;
+      touch-action: none;
+      user-select: none;
+      -webkit-user-select: none;
+      padding: 10px 14px;
+      margin: -10px -14px;
+      position: relative;
+      z-index: 5;
+    }
+    .mtl-word--metta:active, .mtl-word--link:active,
+    .mtl-word--metta.is-dragging, .mtl-word--link.is-dragging {
+      cursor: grabbing;
+    }
+
+    .mtl-magnet-field {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100px;
+      height: 100px;
+      transform: translate(-50%, -50%) scale(0.3);
+      border-radius: 50%;
+      background: radial-gradient(circle, var(--mtl-blue-glow) 0%, rgba(1,56,148,0) 72%);
+      opacity: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .mtl-energy {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 460px;
+      height: 3px;
+      transform: translate(-50%, -50%) scaleX(0);
+      transform-origin: center;
+      background: linear-gradient(90deg, rgba(47,111,237,0) 0%, #2F6FED 50%, rgba(47,111,237,0) 100%);
+      box-shadow: 0 0 20px #2F6FED;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .mtl-realmark {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0.94);
+      width: clamp(260px, 34vw, 430px);
+      height: auto;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .mtl-realmark svg, .mtl-realmark img { width: 100%; height: auto; display: block; filter: drop-shadow(0 8px 22px rgba(1,56,148,0.18)); }
+
+    .mtl-tagline {
+      margin-top: 28px;
+      font-size: 16px;
+      color: var(--mtl-mid);
+      letter-spacing: 0.02em;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .mtl-icon-below {
+      margin-top: 34px;
+      width: 46px;
+      opacity: 0;
+      transform: translateY(10px) scale(0.85);
+      pointer-events: none;
+    }
+    .mtl-icon-below svg, .mtl-icon-below img { width: 100%; height: auto; display: block; }
+
+    .mtl-question {
+      position: absolute;
+      top: 60%;
+      font-size: clamp(20px, 2.6vw, 28px);
+      font-weight: 500;
+      color: #0A1F3D;
+      opacity: 0;
+      transform: translateY(14px);
+      pointer-events: none;
+    }
+
+    .mtl-anatomy {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .mtl-anatomy-eyebrow {
+      position: absolute;
+      top: 12%;
+      font-size: 12px;
+      color: var(--mtl-mid);
+    }
+    .mtl-anatomy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(24px, 8vw, 120px);
+      width: 100%;
+      align-items: center;
+    }
+    @media (max-width: 760px) {
+      .mtl-anatomy-grid { grid-template-columns: 1fr; gap: 56px; }
+    }
+
+    .mtl-anatomy-col {
+      text-align: center;
+      position: relative;
+      transform-origin: center center;
+    }
+
+    .mtl-anatomy-word {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: clamp(40px, 6.5vw, 72px);
+      position: relative;
+      display: inline-flex;
+    }
+    .mtl-anatomy-word--metta { color: #3D3D3D; }
+    .mtl-anatomy-word--link { color: #013894; }
+
+    .mtl-anatomy-word span {
+      display: inline-block;
+      animation: mtl-breathe 3.2s ease-in-out infinite;
+    }
+    .mtl-anatomy-word--metta span:nth-child(1) { animation-delay: 0s; }
+    .mtl-anatomy-word--metta span:nth-child(2) { animation-delay: 0.15s; }
+    .mtl-anatomy-word--metta span:nth-child(3) { animation-delay: 0.3s; }
+    .mtl-anatomy-word--metta span:nth-child(4) { animation-delay: 0.45s; }
+    .mtl-anatomy-word--metta span:nth-child(5) { animation-delay: 0.6s; }
+    @keyframes mtl-breathe {
+      0%, 100% { opacity: 1; transform: translateY(0); }
+      50% { opacity: 0.55; transform: translateY(-3px); }
+    }
+
+    .mtl-particles {
+      position: absolute;
+      inset: -40px -20px auto -20px;
+      height: 120px;
+      pointer-events: none;
+    }
+    .mtl-particle {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: #2F6FED;
+      opacity: 0.5;
+      animation: mtl-float 4.5s ease-in-out infinite;
+    }
+    @keyframes mtl-float {
+      0%, 100% { transform: translateY(0) scale(1); opacity: 0.15; }
+      50% { transform: translateY(-14px) scale(1.4); opacity: 0.6; }
+    }
+
+    .mtl-anatomy-text {
+      margin-top: 22px;
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--mtl-mid);
+      max-width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .mtl-manifesto {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      opacity: 0;
+      padding: 0 24px;
+      pointer-events: none;
+    }
+    .mtl-manifesto p {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(24px, 4vw, 46px);
+      font-weight: 600;
+      line-height: 1.25;
+      color: #0A1F3D;
+    }
+    .mtl-manifesto span { color: #013894; }
+
+    .mtl-finale {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .mtl-finale-word {
+      width: clamp(220px, 30vw, 320px);
+      opacity: 0;
+      transform: scale(0.92);
+    }
+    .mtl-finale-word svg, .mtl-finale-word img { width: 100%; height: auto; display: block; }
+
+    .mtl-finale-label {
+      position: absolute;
+      bottom: 16%;
+      font-size: 12px;
+      color: var(--mtl-mid);
+      opacity: 0;
+      letter-spacing: 0.18em;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .mtl-track { height: auto; }
+      .mtl-pin { position: relative; height: auto; padding: 96px 0; }
+    }
+  </style>
+
+  <!-- CABEÇALHO COM TÍTULO IDENTIFICADOR -->
+  <div class="section-head reveal" style="margin-bottom: 28px;">
+    <h2>Quem Somos</h2>
+    <p class="mtl-title-sub">
+      A Mettalink nasce da junção entre <strong>Metta</strong> (transformação e propósito) e <strong>Link</strong> (conexão e engenharia). Arraste as palavras abaixo para se conectarem!
+    </p>
+  </div>
+
+  <section class="mtl-track" id="mtlTrack">
+    <div class="mtl-pin" id="mtlPin">
+
+      <div class="mtl-ambient" id="mtlAmbient"></div>
+
+      <div class="mtl-stage">
+
+        <!-- CENA 1 / 2 / 3 — wordmark central -->
+        <div class="mtl-wordblock" id="mtlWordblock">
+          <div class="mtl-wordrow" id="mtlWordrow">
+            <div class="mtl-word mtl-word--metta" id="mtlWordMetta">
+              <span>M</span><span>E</span><span>T</span><span>T</span><span>A</span>
+            </div>
+            <div class="mtl-word mtl-word--link" id="mtlWordLink">
+              <span>L</span><span>I</span><span>N</span><span>K</span>
+            </div>
+            <div class="mtl-energy" id="mtlEnergy"></div>
+            <div class="mtl-magnet-field" id="mtlMagnetField"></div>
+
+            <!-- wordmark oficial vetorizado, revelado no encaixe -->
+            <div class="mtl-realmark" id="mtlRealmark">
+              <img src="Marca/mettalink-wordmark.svg" alt="Mettalink Wordmark">
+            </div>
+          </div>
+
+          <p class="mtl-tagline" id="mtlTagline">Toda conexão começa separada.</p>
+
+          <div class="mtl-icon-below" id="mtlIconBelow">
+            <img src="Marca/mettalink-logo-symbol.svg" alt="Mettalink Símbolo">
+          </div>
+
+          <p class="mtl-question" id="mtlQuestion">Você sabe o que Mettalink significa?</p>
+        </div>
+
+        <!-- CENA 4 — anatomia do nome -->
+        <div class="mtl-anatomy" id="mtlAnatomy">
+          <span class="mtl-anatomy-eyebrow mtl-mono">// Anatomia da marca</span>
+          <div class="mtl-anatomy-grid">
+            <div class="mtl-anatomy-col" id="mtlAnatomyColMetta">
+              <div class="mtl-particles" id="mtlParticles"></div>
+              <div class="mtl-anatomy-word mtl-anatomy-word--metta">
+                <span>M</span><span>E</span><span>T</span><span>T</span><span>A</span>
+              </div>
+              <p class="mtl-anatomy-text">Inspirado em &ldquo;Metta&rdquo;, conceito que representa benevolência, colaboração e relações genuínas.</p>
+            </div>
+            <div class="mtl-anatomy-col" id="mtlAnatomyColLink">
+              <div class="mtl-anatomy-word mtl-anatomy-word--link">
+                <span>L</span><span>I</span><span>N</span><span>K</span>
+              </div>
+              <p class="mtl-anatomy-text">&ldquo;Link&rdquo; representa a capacidade de conectar pessoas, ideias e tecnologia.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CENA 5 — manifesto -->
+        <div class="mtl-manifesto" id="mtlManifesto">
+          <p>Mais do que conectar sistemas.<br><span>Conectamos possibilidades.</span></p>
+        </div>
+
+        <!-- CENA 6 — transição para a wordmark, que se desfaz de volta em METTA + LINK -->
+        <div class="mtl-finale" id="mtlFinale">
+          <div class="mtl-finale-word" id="mtlFinaleWord">
+            <img src="Marca/mettalink-wordmark.svg" alt="Mettalink Wordmark">
+          </div>
+          <span class="mtl-finale-label mtl-mono" id="mtlFinaleLabel">Wordmark Mettalink</span>
+        </div>
+
+        <div class="mtl-hint" id="mtlHint">
+          <svg viewBox="0 0 26 14" fill="none"><path d="M1 7h10M15 7h10" stroke="currentColor" stroke-width="1.4"/><path d="M8 3l4 4-4 4M18 3l-4 4 4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="mtl-mono">Arraste ou clique nas palavras para conectar</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- GSAP Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+<script>
+(function () {
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var els = {
+    ambient: document.getElementById('mtlAmbient'),
+    wordMetta: document.getElementById('mtlWordMetta'),
+    wordLink: document.getElementById('mtlWordLink'),
+    energy: document.getElementById('mtlEnergy'),
+    magnetField: document.getElementById('mtlMagnetField'),
+    realmark: document.getElementById('mtlRealmark'),
+    tagline: document.getElementById('mtlTagline'),
+    iconBelow: document.getElementById('mtlIconBelow'),
+    question: document.getElementById('mtlQuestion'),
+    anatomy: document.getElementById('mtlAnatomy'),
+    anatomyColMetta: document.getElementById('mtlAnatomyColMetta'),
+    anatomyColLink: document.getElementById('mtlAnatomyColLink'),
+    particles: document.getElementById('mtlParticles'),
+    manifesto: document.getElementById('mtlManifesto'),
+    finale: document.getElementById('mtlFinale'),
+    finaleWord: document.getElementById('mtlFinaleWord'),
+    finaleLabel: document.getElementById('mtlFinaleLabel'),
+    hint: document.getElementById('mtlHint'),
+    wordrow: document.getElementById('mtlWordrow'),
+    playBtn: document.getElementById('mtlPlayBtn'),
+    pin: document.getElementById('mtlPin')
+  };
+
+  if (!els.wordMetta || !els.wordLink) return;
+
+  // gera partículas discretas ao redor de "METTA"
+  (function seedParticles() {
+    var n = 10;
+    if (!els.particles) return;
+    for (var i = 0; i < n; i++) {
+      var p = document.createElement('span');
+      p.className = 'mtl-particle';
+      p.style.left = (Math.random() * 100) + '%';
+      p.style.top = (Math.random() * 100) + '%';
+      p.style.animationDelay = (Math.random() * 4) + 's';
+      p.style.animationDuration = (3.5 + Math.random() * 2.5) + 's';
+      els.particles.appendChild(p);
+    }
+  })();
+
+  if (reduceMotion || !window.gsap) {
+    gsap && gsap.set([els.wordMetta, els.wordLink], { x: 0 });
+    if (els.wordLink) els.wordLink.style.color = '#2F6FED';
+    [els.tagline, els.iconBelow, els.question, els.anatomy, els.manifesto, els.finale, els.finaleLabel].forEach(function (el) {
+      if (el) {
+        el.style.opacity = 1;
+        el.style.transform = 'none';
+        el.style.position = 'static';
+        el.style.margin = '48px auto';
+      }
+    });
+    if (els.finaleWord) {
+      els.finaleWord.style.opacity = 1;
+      els.finaleWord.style.transform = 'none';
+    }
+    if (els.realmark) {
+      els.realmark.style.opacity = 1;
+      els.realmark.style.position = 'static';
+    }
+    if (els.hint) els.hint.style.display = 'none';
+    if (els.anatomy) els.anatomy.style.position = 'static';
+    if (els.finale) els.finale.style.position = 'static';
+    if (els.energy) els.energy.style.display = 'none';
+    if (els.magnetField) els.magnetField.style.display = 'none';
+    return;
+  }
+
+  // =====================================================================
+  // FASE A — arraste espelhado tipo ímã
+  // =====================================================================
+  var D = window.innerWidth <= 640 ? 90 : 190;
+  var GRAB_ZONE = 0.5;
+  var RELEASE_MIN = 0.15;
+  var p = 0;
+  var dragging = false;
+  var grabbedSide = null;
+  var startClientX = 0;
+  var startP = 0;
+  var connected = false;
+  var finaleSeparateProxy = { v: 0 };
+
+  function setWordPositions(val) {
+    var dist = D * (1 - val);
+    gsap.set(els.wordMetta, { x: -dist });
+    gsap.set(els.wordLink, { x: dist });
+    var fieldScale = 0.3 + val * 1.4;
+    if (els.magnetField) {
+      els.magnetField.style.opacity = (val * 0.7).toFixed(2);
+      els.magnetField.style.transform = 'translate(-50%, -50%) scale(' + fieldScale.toFixed(2) + ')';
+    }
+  }
+  setWordPositions(0);
+
+  window.addEventListener('resize', function () {
+    if (dragging) return;
+    D = window.innerWidth <= 640 ? 90 : 190;
+    if (!connected) setWordPositions(p);
+  });
+
+  function onPointerDown(side) {
+    return function (e) {
+      if (connected) return;
+      dragging = true;
+      grabbedSide = side;
+      startClientX = e.clientX;
+      startP = p;
+      e.target.classList.add('is-dragging');
+      if (e.target.setPointerCapture) {
+        try { e.target.setPointerCapture(e.pointerId); } catch (err) {}
+      }
+      if (els.hint) gsap.to(els.hint, { opacity: 0, duration: 0.3 });
+    };
+  }
+
+  function onPointerMove(e) {
+    if (!dragging || connected) return;
+    var deltaX = e.clientX - startClientX;
+    var deltaP = grabbedSide === 'metta' ? deltaX / D : -deltaX / D;
+    p = Math.max(0, Math.min(1, startP + deltaP));
+    setWordPositions(p);
+
+    if (p >= GRAB_ZONE) {
+      dragging = false;
+      if (els.wordMetta) els.wordMetta.classList.remove('is-dragging');
+      if (els.wordLink) els.wordLink.classList.remove('is-dragging');
+      snapConnect();
+    }
+  }
+
+  function onPointerUp(e) {
+    if (!dragging || connected) return;
+    dragging = false;
+    if (els.wordMetta) els.wordMetta.classList.remove('is-dragging');
+    if (els.wordLink) els.wordLink.classList.remove('is-dragging');
+    if (p >= RELEASE_MIN) {
+      snapConnect();
+    } else {
+      var proxy = { v: p };
+      gsap.to(proxy, {
+        v: 0, duration: 0.6, ease: 'elastic.out(1, 0.55)',
+        onUpdate: function () { p = proxy.v; setWordPositions(p); },
+        onComplete: function () {
+          if (els.hint) gsap.to(els.hint, { opacity: 1, duration: 0.5, delay: 0.3 });
+        }
+      });
+    }
+  }
+
+  els.wordMetta.addEventListener('pointerdown', onPointerDown('metta'));
+  els.wordLink.addEventListener('pointerdown', onPointerDown('link'));
+  window.addEventListener('pointermove', onPointerMove);
+  window.addEventListener('pointerup', onPointerUp);
+  window.addEventListener('pointercancel', onPointerUp);
+
+  // CLIQUE DIRETO NAS PALAVRAS OU BOTÃO INICIA A ANIMAÇÃO IMEDIATAMENTE
+  function triggerDirectStart(e) {
+    if (connected) return;
+    if (e) e.stopPropagation();
+    snapConnect();
+  }
+
+  els.wordMetta.addEventListener('click', triggerDirectStart);
+  els.wordLink.addEventListener('click', triggerDirectStart);
+  if (els.wordrow) els.wordrow.addEventListener('click', triggerDirectStart);
+  if (els.playBtn) els.playBtn.addEventListener('click', triggerDirectStart);
+
+  function snapConnect() {
+    if (connected) return;
+    connected = true;
+
+    if (els.playBtn) gsap.to(els.playBtn, { opacity: 0, scale: 0.9, duration: 0.3 });
+
+    var proxy = { v: p };
+    gsap.timeline()
+      .to(proxy, {
+        v: 1, duration: 0.28, ease: 'power4.in',
+        onUpdate: function () { setWordPositions(proxy.v); }
+      })
+      .to(els.wordrow, { scale: 1.035, duration: 0.4, ease: 'power1.out' })
+      .to(els.wordrow, { x: '+=3', duration: 0.05, yoyo: true, repeat: 5 }, '<')
+      .to(els.wordrow, { scale: 1, duration: 0.5, ease: 'back.out(3)' }, '<0.1')
+      .to(els.energy, { opacity: 1, scaleX: 1, duration: 0.35 }, '<')
+      .to(els.magnetField, { opacity: 0, duration: 0.4 }, '<')
+      .to(els.energy, { opacity: 0, duration: 0.5 }, '>')
+      .set([els.wordMetta, els.wordLink], { gap: '0px' }, '<-0.3')
+      .to([els.wordMetta, els.wordLink], { opacity: 0, duration: 0.35 }, '<0.1')
+      .to(els.tagline, { opacity: 0, duration: 0.3 }, '<')
+      .to(els.realmark, { opacity: 1, scale: 1, duration: 0.6, ease: 'power2.out' }, '>-0.1')
+      .to(els.iconBelow, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: 'power2.out' }, '<0.25')
+      .call(startStoryAnimation);
+  }
+
+  if (els.hint) gsap.to(els.hint, { opacity: 1, duration: 0.8, delay: 0.4 });
+  if (els.tagline) gsap.to(els.tagline, { opacity: 1, duration: 1, delay: 0.6 });
+
+  // =====================================================================
+  // FASE B — a partir da conexão, a história toca sozinha (loop continuo)
+  // =====================================================================
+  var tl2 = gsap.timeline({
+    defaults: { ease: 'power2.inOut' },
+    paused: true,
+    onUpdate: function () {
+      if (els.ambient) els.ambient.style.opacity = 0.25 + tl2.progress() * 0.4;
+    }
+  });
+
+  tl2.to(els.iconBelow, { opacity: 0, duration: 0.5 }, 0)
+    .to(els.question, { opacity: 1, y: 0, duration: 0.7 }, 0.15)
+    .to(els.question, { opacity: 0, y: -10, duration: 0.6 }, 1.5)
+    .to(els.realmark, { opacity: 0, scale: 0.96, duration: 0.6 }, 1.5)
+    .to(els.anatomy, { opacity: 1, duration: 0.8 }, 2.1)
+    .to({}, { duration: 0.4 })
+    .to(els.anatomyColLink, { opacity: 0.12, duration: 0.5 }, '<')
+    .to(els.anatomyColMetta, { scale: 1.3, duration: 0.6, ease: 'power2.out' }, '<')
+    .to({}, { duration: 2 })
+    .to(els.anatomyColMetta, { scale: 1, duration: 0.5, ease: 'power2.inOut' })
+    .to(els.anatomyColLink, { opacity: 1, duration: 0.5 }, '<')
+    .to({}, { duration: 0.3 })
+    .to(els.anatomyColMetta, { opacity: 0.12, duration: 0.5 }, '<')
+    .to(els.anatomyColLink, { scale: 1.3, duration: 0.6, ease: 'power2.out' }, '<')
+    .to({}, { duration: 1 })
+    .to(els.anatomyColLink, { scale: 1, duration: 0.5, ease: 'power2.inOut' })
+    .to(els.anatomyColMetta, { opacity: 1, duration: 0.5 }, '<')
+    .to({}, { duration: 0.4 })
+    .to(els.anatomy, { opacity: 0, duration: 0.8 })
+    .to(els.manifesto, { opacity: 1, duration: 0.9 }, '>-0.2')
+    .to({}, { duration: 2 })
+    .to(els.manifesto, { opacity: 0, scale: 0.97, duration: 0.8 })
+    .to(els.finale, { opacity: 1, duration: 0.6 }, '>-0.2')
+    .to(els.finaleWord, { opacity: 1, scale: 1, duration: 1.1, ease: 'power2.out' }, '<')
+    .to(els.finaleLabel, { opacity: 1, duration: 0.7 }, '>-0.5')
+    .to({}, { duration: 1.2 })
+    .to(els.finaleLabel, { opacity: 0, duration: 0.4 })
+    .call(function () {
+      // Tira do fluxo do layout os elementos ocultos (tagline, ícone, pergunta) que ainda
+      // ocupam espaço na coluna do wordblock — isso é o que descentralizava METTA/LINK
+      // em relação à wordmark ao reaparecerem (a coluna toda deixava de ficar centralizada).
+      gsap.set([els.tagline, els.iconBelow, els.question], { display: 'none' });
+      // Reposiciona METTA e LINK unidas no centro (mesmo estado de quando conectaram),
+      // prontas para se separarem enquanto a wordmark se desfaz.
+      gsap.set([els.wordMetta, els.wordLink], { opacity: 1, gap: '0px' });
+      setWordPositions(1);
+    })
+    .to(els.finaleWord, { opacity: 0, scale: 0.94, duration: 0.7, ease: 'power2.inOut' }, '<')
+    .to([els.wordMetta, els.wordLink], { gap: '5px', duration: 0.9, ease: 'power2.inOut' }, '<')
+    .to(finaleSeparateProxy, {
+      v: 1, duration: 1.1, ease: 'power3.inOut',
+      onUpdate: function () { setWordPositions(1 - finaleSeparateProxy.v); }
+    }, '<0.1')
+    .to(els.finale, { opacity: 0, duration: 0.4 }, '>-0.3')
+    .call(resetToStart);
+
+  function startStoryAnimation() {
+    tl2.play(0);
+  }
+
+  function resetToStart() {
+    connected = false;
+    p = 0;
+    dragging = false;
+
+    if (els.playBtn) gsap.to(els.playBtn, { opacity: 1, scale: 1, duration: 0.4 });
+    gsap.set([els.tagline, els.iconBelow, els.question], { display: '' });
+    gsap.set([els.wordMetta, els.wordLink], { opacity: 1, gap: '5px' });
+    setWordPositions(0);
+    gsap.set(els.magnetField, { opacity: 0, scale: 0.3 });
+    gsap.set(els.energy, { opacity: 0, scaleX: 0 });
+    gsap.set(els.realmark, { opacity: 0, scale: 0.94 });
+    gsap.set(els.tagline, { opacity: 0 });
+    gsap.set(els.iconBelow, { opacity: 0, y: 10, scale: 0.85 });
+    gsap.set(els.question, { opacity: 0, y: 14 });
+    gsap.set(els.anatomy, { opacity: 0 });
+    gsap.set([els.anatomyColMetta, els.anatomyColLink], { scale: 1, opacity: 1 });
+    gsap.set(els.manifesto, { opacity: 0, scale: 1 });
+    gsap.set(els.finale, { opacity: 0 });
+    gsap.set(els.finaleWord, { opacity: 0, scale: 0.92 });
+    gsap.set(els.finaleLabel, { opacity: 0 });
+    finaleSeparateProxy.v = 0;
+
+    if (els.hint) gsap.to(els.hint, { opacity: 1, duration: 0.6, delay: 0.3 });
+    if (els.tagline) gsap.to(els.tagline, { opacity: 1, duration: 0.6, delay: 0.3 });
+  }
+
+})();
+</script>
+</section>
+
+<!-- =====================================================================
+     3. PALETA DE CORES
+===================================================================== -->
+<section id="paleta">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Identidade Visual</h2>
+      <p><strong>Nossa Paleta de Cores.</strong> A identidade cromática da Mettalink reflete solidez técnica, sofisticação industrial e o dinamismo do universo digital.</p>
+    </div>
+
+    <!-- METTALINK CAPTURA DE CORES (GAME LAUNCHER) -->
+    <div id="colorGameContainer" class="color-game-container reveal">
+      <div id="startScreen">
+        <button id="playBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
+          Capturar as Cores
+        </button>
+
+        <div id="resultsView">
+          <span class="results-eyebrow">CORES CAPTURADAS</span>
+          <div class="results-row">
+            <div class="result-item">
+              <div class="result-ball" style="background:#013894;"></div>
+              <div class="result-name">Azul Mettalink</div>
+              <div class="result-hex">#013894</div>
+            </div>
+            <div class="result-item">
+              <div class="result-ball" style="background:#3D3D3D;"></div>
+              <div class="result-name">Grafite Estrutural</div>
+              <div class="result-hex">#3D3D3D</div>
+            </div>
+            <div class="result-item">
+              <div class="result-ball" style="background:#FFDE59;"></div>
+              <div class="result-name">Amarelo Destaque</div>
+              <div class="result-hex">#FFDE59</div>
+            </div>
+          </div>
+          <button id="replayBtn" class="replay-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+            Capturar Novamente
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- =====================================================================
+         SHOWCASE INTERATIVO DE LOGOS E VARIAÇÕES DE COR (INSPIRADO NA REFERÊNCIA)
+    ===================================================================== -->
+    <div class="logo-showcase-container reveal">
+
+      <!-- PAINEL DE CONTROLES DO ESTÚDIO -->
+      <div class="studio-controls-bar">
+        <!-- Presets Rápidos -->
+        <div class="control-group">
+          <span class="control-label">Variações Oficiais:</span>
+          <div class="preset-buttons" id="logoPresetButtons">
+            <button class="preset-btn active" data-preset="0">01 · Azul Mono Branco</button>
+            <button class="preset-btn" data-preset="1">02 · Fundo Branco Oficial</button>
+            <button class="preset-btn" data-preset="2">03 · Fundo Preto</button>
+          </div>
+        </div>
+
+        <!-- Formatos da Logo -->
+        <div class="control-group">
+          <span class="control-label">Formato da Logo:</span>
+          <div class="format-buttons" id="logoFormatButtons">
+            <button class="format-btn active" data-format="stacked" title="Logo Empilhada">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="3" width="10" height="7" rx="1"/><rect x="4" y="14" width="16" height="7" rx="1"/></svg>
+              Empilhada
+            </button>
+            <button class="format-btn" data-format="horizontal" title="Logo Horizontal">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="8" height="12" rx="1"/><rect x="13" y="8" width="8" height="8" rx="1"/></svg>
+              Horizontal
+            </button>
+            <button class="format-btn" data-format="mark" title="Apenas Ícone">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12,2 22,22 2,22"/></svg>
+              Ícone
+            </button>
+            <button class="format-btn" data-format="wordmark" title="Apenas Tipografia">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M10 7v10M14 7v10"/></svg>
+              Logotipo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PALCO PRINCIPAL DE EXIBIÇÃO DA LOGO COM SETAS (NAVEGADOR HERO) -->
+      <div class="logo-stage-wrapper">
+        <button class="stage-nav-arrow arrow-prev" id="logoPrevBtn" aria-label="Variação Anterior">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+
+        <div class="logo-stage" id="mainLogoStage">
+          <!-- Badge da Variação Ativa -->
+          <div class="stage-info-badge">
+            <span class="stage-variation-num" id="stageVariationNum">01 / 03</span>
+            <span class="stage-variation-name" id="stageVariationName">01 · AZUL MONO BRANCO</span>
+            <span class="contrast-badge" id="stageContrastBadge">Contraste: AAA (15.2:1)</span>
+          </div>
+
+          <!-- SVG RENDERIZADO DA LOGO METTALINK -->
+          <div class="stage-svg-box" id="stageSvgBox">
+            <!-- Renderizado dinamicamente via JS -->
+          </div>
+
+          <!-- Controles de Cor Customizados em Tempo Real -->
+          <div class="customizer-bar">
+            <span class="customizer-title">Laboratório de Cores:</span>
+            <div class="color-picker-item">
+              <label for="pickerBg">Fundo</label>
+              <input type="color" id="pickerBg" value="#013894">
+            </div>
+            <div class="color-picker-item">
+              <label for="pickerPrimary">W + LINK</label>
+              <input type="color" id="pickerPrimary" value="#FFFFFF">
+            </div>
+            <div class="color-picker-item">
+              <label for="pickerSecondary">M + METTA</label>
+              <input type="color" id="pickerSecondary" value="#3D3D3D">
+            </div>
+            <button class="reset-custom-btn" id="resetColorsBtn" title="Resetar Cores para o Preset Original">Resetar</button>
+          </div>
+        </div>
+
+        <button class="stage-nav-arrow arrow-next" id="logoNextBtn" aria-label="Próxima Variação">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <!-- BARRA DE AÇÕES (COPIAR / BAIXAR SVG) -->
+      <div class="stage-actions">
+        <button class="action-btn" id="copySvgBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copiar Código SVG
+        </button>
+        <button class="action-btn" id="downloadSvgBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Baixar SVG Personalizado
+        </button>
+        <span class="action-status-toast" id="actionToast"></span>
+      </div>
+
+      <!-- GRID DE 3 CARDS COM AS VARIAÇÕES DE COR (REFERÊNCIA VISUAL DIRETA DA FOTO) -->
+      <div class="reference-section-head">
+        <h4>Variações de Marca em Cards (Matriz de Aplicação)</h4>
+        <p>Clique em qualquer um dos 3 cards abaixo para ativá-lo imediatamente no palco principal com navegação pelas setas.</p>
+      </div>
+
+      <div class="logo-grid-showcase" id="logoReferenceGrid">
+        <!-- 3 Cards de Variação de Cores serão renderizados pelo JavaScript -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     5. SERVIÇOS
+===================================================================== -->
+<section id="servicos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>O Que Fazemos</h2>
+      <p><strong>Quatro frentes, um único padrão de qualidade.</strong> Cada projeto passa pelas mesmas mãos que escrevem o código — sem camadas de gerência entre você e quem constrói.</p>
+    </div>
+
+    <div class="svc-grid reveal">
+      <div class="svc-card">
+        <span class="svc-flag mono">--produto</span>
+        <h3>Produtos digitais</h3>
+        <p>Da ideia ao primeiro usuário: descoberta, design de interface e desenvolvimento de aplicações web e mobile.</p>
+        <span class="svc-node"></span>
+      </div>
+      <div class="svc-card">
+        <span class="svc-flag mono">--arquitetura</span>
+        <h3>Arquitetura de sistemas</h3>
+        <p>Desenho de sistemas que aguentam escala: modelagem de dados, integrações e decisões técnicas documentadas.</p>
+        <span class="svc-node"></span>
+      </div>
+      <div class="svc-card">
+        <span class="svc-flag mono">--infra</span>
+        <h3>Infraestrutura &amp; cloud</h3>
+        <p>Provisionamento, observabilidade e automação para times que não querem apagar incêndio às 3h da manhã.</p>
+        <span class="svc-node"></span>
+      </div>
+      <div class="svc-card">
+        <span class="svc-flag mono">--time</span>
+        <h3>Times dedicados</h3>
+        <p>Squads plugados no seu produto, com ritmo de entrega previsível e comunicação direta com sua equipe.</p>
+        <span class="svc-node"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     6. PROTOCOLOS (O CUIDADO COM A IDENTIDADE & O QUE EVITAMOS)
+===================================================================== -->
+<section id="protocolos" class="protocolos-section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Protocolos</h2>
+      <p class="protocol-subhead">
+        <strong>O cuidado com a identidade.</strong> Cada proporção, espaçamento e alinhamento foi definido para manter consistência em qualquer aplicação.
+      </p>
+    </div>
+
+    <!-- BLOCO 1: O QUE EVITAMOS -->
+    <div class="avoid-wrapper reveal" style="margin-bottom: 56px;">
+      <div class="avoid-header">
+        <span class="avoid-badge mono">Uma lista curta.</span>
+        <h3>O que evitamos</h3>
+      </div>
+      <div class="avoid-grid">
+        <div class="avoid-card">
+          <div class="avoid-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+          </div>
+          <h4>Não utilizamos templates.</h4>
+          <p>Desenvolvimento exclusivo e sob medida. Fugimos de estruturas genéricas e pré-moldadas para garantir originalidade e relevância.</p>
+        </div>
+
+        <div class="avoid-card">
+          <div class="avoid-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h4>Não seguimos tendências passageiras.</h4>
+          <p>Priorizamos elegância atemporal, fundamentos sólidos de design e valor estrutural duradouro sobre modismos visuais efêmeros.</p>
+        </div>
+
+        <div class="avoid-card">
+          <div class="avoid-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h4>Não sacrificamos desempenho por efeitos visuais.</h4>
+          <p>A fluidez, usabilidade e alta performance técnica mantêm-se inegociáveis frente a adornos desnecessários.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BLOCO 2: FORMAS DE COMO NÃO SE DEVE USAR A MARCA -->
+    <div class="prohibitions-wrapper reveal">
+      <div class="prohibitions-header">
+        <span class="prohibition-badge mono">Usos Incorretos</span>
+        <h3>Formas de como não se deve usar a marca</h3>
+        <p>Regras fundamentais de preservação do sistema de identidade Mettalink.</p>
+      </div>
+
+      <div class="prohibitions-grid">
+        <!-- 1. Distorção -->
+        <div class="prohibition-card">
+          <div class="prohibition-preview distorcao">
+            <span class="prohibition-tag">Incorreto</span>
+            <img src="Marca/mettalink-logo-combo-horizontal.svg" alt="Distorção" class="bad-logo stretch">
+          </div>
+          <div class="prohibition-detail">
+            <h4>Não distorcer a proporção</h4>
+            <p>É proibido esticar, achatar ou alterar o aspecto axial da marca.</p>
+          </div>
+        </div>
+
+        <!-- 2. Alterar Cores -->
+        <div class="prohibition-card">
+          <div class="prohibition-preview cores-alteradas">
+            <span class="prohibition-tag">Incorreto</span>
+            <img src="Marca/mettalink-logo-combo-horizontal.svg" alt="Cores Incorretas" class="bad-logo wrong-colors">
+          </div>
+          <div class="prohibition-detail">
+            <h4>Não alterar as cores</h4>
+            <p>Utilize apenas as paletas homologadas (#013894, #3D3D3D, #FFDE59).</p>
+          </div>
+        </div>
+
+        <!-- 3. Efeitos Indesejados -->
+        <div class="prohibition-card">
+          <div class="prohibition-preview efeitos-indesejados">
+            <span class="prohibition-tag">Incorreto</span>
+            <img src="Marca/mettalink-logo-combo-horizontal.svg" alt="Efeitos" class="bad-logo glow-shadow">
+          </div>
+          <div class="prohibition-detail">
+            <h4>Não aplicar sombras ou efeitos</h4>
+            <p>A aplicação da logo deve ser plana e limpa. Não aplique drop shadows, neon glow ou gradientes desnecessários.</p>
+          </div>
+        </div>
+
+        <!-- 4. Rotação -->
+        <div class="prohibition-card">
+          <div class="prohibition-preview rotacao">
+            <span class="prohibition-tag">Incorreto</span>
+            <img src="Marca/mettalink-logo-combo-horizontal.svg" alt="Rotação" class="bad-logo rotate">
+          </div>
+          <div class="prohibition-detail">
+            <h4>Não rotacionar ou inclinar</h4>
+            <p>Mantenha sempre a orientação ortogonal rigorosamente nivelada a 0 graus.</p>
+          </div>
+        </div>
+
+        <!-- 5. NÃO CORTAR A LOGO -->
+        <div class="prohibition-card">
+          <div class="prohibition-preview corte">
+            <span class="prohibition-tag">Incorreto</span>
+            <div class="bad-logo-crop-wrap">
+              <img src="Marca/mettalink-logo-combo-horizontal.svg" alt="Corte" class="bad-logo-crop-img">
+            </div>
+          </div>
+          <div class="prohibition-detail">
+            <h4>Não cortar a logo</h4>
+            <p>Nunca recorte, mude a área de respiro mínima ou fature partes da marca ou símbolo.</p>
+          </div>
+        </div>
+
+        <!-- 6. NÃO MUDAR A TIPOGRAFIA DA MARCA -->
+        <div class="prohibition-card">
+          <div class="prohibition-preview tipografia">
+            <span class="prohibition-tag">Incorreto</span>
+            <div class="wrong-typo-preview">Mettalink</div>
+          </div>
+          <div class="prohibition-detail">
+            <h4>Não mudar a tipografia da marca</h4>
+            <p>Nunca recrie o wordmark utilizando fontes do sistema ou tipos não homologados.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     6. MOCKUPS E REFERÊNCIAS (APLICAÇÕES DA MARCA)
+===================================================================== -->
+<section id="mockups">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Aplicações da Marca</h2>
+      <p><strong>Mockups & Referências Visuais.</strong> Demonstração da presença visual e identidade da Mettalink em produtos físicos, ambientes digitais e branding corporativo.</p>
+    </div>
+
+    <div class="bap-root reveal" id="brandAppsViewer" tabindex="0">
+      <div class="bap-main-wrap">
+        <div class="bap-main-box">
+          <div class="bap-frame bap-frame-main" id="bapMainFrame">
+            <div class="bap-layer">
+              <img src="Mockups/IDV - Mettalink_pages-to-jpg-0014.jpg" alt="Branding & Identidade Visual" class="bap-img" />
+              <div class="bap-scrim"></div>
+              <div class="bap-caption">
+                <span class="bap-caption-tag">01</span>
+                <span class="bap-caption-label">Branding & Identidade Visual</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="bap-nav-btn bap-nav-left" id="bapPrevBtn" aria-label="Aplicação anterior">‹</button>
+        <button class="bap-nav-btn bap-nav-right" id="bapNextBtn" aria-label="Próxima aplicação">›</button>
+      </div>
+
+      <div class="bap-thumbs-row" id="bapThumbsRow">
+        <div class="bap-thumb-box">
+          <div class="bap-frame bap-frame-thumb">
+            <div class="bap-layer">
+              <img src="Mockups/IDV - Mettalink_pages-to-jpg-0015.jpg" alt="Aplicações de Marca" class="bap-img" loading="lazy" />
+              <div class="bap-scrim"></div>
+              <div class="bap-caption">
+                <span class="bap-caption-tag">02</span>
+                <span class="bap-caption-label">Aplicações de Marca</span>
+              </div>
+            </div>
+            <div class="bap-thumb-ring"></div>
+          </div>
+        </div>
+        <div class="bap-thumb-box">
+          <div class="bap-frame bap-frame-thumb">
+            <div class="bap-layer">
+              <img src="Mockups/IDV - Mettalink_pages-to-jpg-0016.jpg" alt="Papelaria & Material Institucional" class="bap-img" loading="lazy" />
+              <div class="bap-scrim"></div>
+              <div class="bap-caption">
+                <span class="bap-caption-tag">03</span>
+                <span class="bap-caption-label">Papelaria & Material Institucional</span>
+              </div>
+            </div>
+            <div class="bap-thumb-ring"></div>
+          </div>
+        </div>
+        <div class="bap-thumb-box">
+          <div class="bap-frame bap-frame-thumb">
+            <div class="bap-layer">
+              <img src="Mockups/IDV - Mettalink_pages-to-jpg-0017.jpg" alt="Sinalização & Presença Física" class="bap-img" loading="lazy" />
+              <div class="bap-scrim"></div>
+              <div class="bap-caption">
+                <span class="bap-caption-tag">04</span>
+                <span class="bap-caption-label">Sinalização & Presença Física</span>
+              </div>
+            </div>
+            <div class="bap-thumb-ring"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bap-footer">
+        <div class="bap-dots" id="bapDots">
+          <!-- Indicadores paginados via JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     9. DEPOIMENTOS
+===================================================================== -->
+<section id="depoimentos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>O Que Dizem</h2>
+      <p>Clientes que voltaram para o segundo projeto.</p>
+    </div>
+
+    <div class="td-root reveal">
+      <div class="td-wrap">
+        <div class="td-deck-stage" id="tdStage"></div>
+
+        <div class="td-controls">
+          <button class="td-arrow" id="tdPrev" aria-label="Depoimento anterior">‹</button>
+          <div class="td-dots" id="tdDots"></div>
+          <button class="td-arrow" id="tdNext" aria-label="Próximo depoimento">›</button>
+        </div>
+
+        <p class="td-hint">arraste o cartão para o lado, ou use as setas</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     10. CONTATO / CTA & FOOTER (BLOCO ESCURO INTEGRAL DE BORDA A BORDA)
+===================================================================== -->
+<div class="footer-full-block">
+  <section class="cta-section" id="contato">
+    <div class="wrap cta-inner">
+      <div class="reveal">
+        <span class="eyebrow" style="background:rgba(255,255,255,0.08); color:#9DB6ED; border-color: rgba(157, 182, 237, 0.25);"><span class="dot" style="background:#9DB6ED;"></span>PRÓXIMA VAGA EM AGOSTO</span>
+        <h2>Vamos conversar sobre o seu sistema.</h2>
+        <p>Conte o que precisa ser construído. Respondemos em até dois dias úteis com os próximos passos.</p>
+      </div>
+      <div class="contact-card reveal">
+        <div class="contact-row">
+          <span class="contact-label-with-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"/></svg> SITE OFICIAL</span>
+          <a href="https://www.mettalink.dev" target="_blank" rel="noopener">www.mettalink.dev</a>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label-with-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> EMAIL COMERCIAL</span>
+          <a href="mailto:contato@mettalink.dev">contato@mettalink.dev</a>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label-with-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg> REDES SOCIAIS</span>
+          <span><a href="#" target="_blank">LinkedIn</a> · <a href="#" target="_blank">GitHub</a> · <a href="#" target="_blank">Instagram</a></span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label-with-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> ENDEREÇO FÍSICO</span>
+          <span>Av. Paulista, 1000 — Bela Vista, São Paulo / SP</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label-with-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> RESPOSTA</span>
+          <span>até 2 horas úteis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-brand">
+        <img src="Marca/mettalink-logo-symbol-white.svg" alt="Mettalink Símbolo Branco" class="foot__mark">
+        <img src="Marca/mettalink-wordmark-white.svg" alt="Mettalink Wordmark Branca" class="foot__name-img" height="18">
+      </div>
+      <span class="foot-copy">© 2026 METTALINK ENGENHARIA DE SOFTWARE</span>
+
+      <div class="foot-links">
+        <a href="#servicos">serviços</a>&nbsp;·&nbsp;
+        <a href="#trabalhos">trabalhos</a>&nbsp;·&nbsp;
+        <a href="#contato">contato</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- CAMADA DO JOGO (INTERACTIVE OVERLAY RAIZ) -->
+<div id="gameLayer">
+  <button id="closeBtn" aria-label="Fechar jogo">&times;</button>
+
+  <div class="hud">
+    <h2 class="hud-title">Capture as Cores da Mettalink</h2>
+    <p class="hud-sub">segure uma bola e chacoalhe o mouse/dedo pra revelar a cor</p>
+    <div class="tracker" id="tracker">
+      <div class="slot" id="slot0"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+      <div class="slot" id="slot1"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+      <div class="slot" id="slot2"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div>
+    </div>
+  </div>
+
+  <div id="toastLayer"></div>
+
+  <div class="ball" id="ball0" data-hex="#013894" data-name="Azul Mettalink">
+    <div class="core"></div>
+    <div class="highlight"></div>
+    <div class="shake-ring">
+      <svg viewBox="0 0 84 84"><circle cx="42" cy="42" r="38" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+    </div>
+  </div>
+
+  <div class="ball" id="ball1" data-hex="#3D3D3D" data-name="Grafite Estrutural">
+    <div class="core"></div>
+    <div class="highlight"></div>
+    <div class="shake-ring">
+      <svg viewBox="0 0 84 84"><circle cx="42" cy="42" r="38" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+    </div>
+  </div>
+
+  <div class="ball" id="ball2" data-hex="#FFDE59" data-name="Amarelo Destaque">
+    <div class="core"></div>
+    <div class="highlight"></div>
+    <div class="shake-ring">
+      <svg viewBox="0 0 84 84"><circle cx="42" cy="42" r="38" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+    </div>
+  </div>
+
+  <div id="columnsOverlay">
+    <div class="col" id="col0" style="background:#013894; color:#fff;">
+      <div class="col-content">
+        <span class="col-eyebrow">COR 01</span>
+        <h3 class="col-name">Azul Mettalink</h3>
+        <span class="col-hex">#013894</span>
+      </div>
+    </div>
+    <div class="col" id="col1" style="background:#3D3D3D; color:#fff;">
+      <div class="col-content">
+        <span class="col-eyebrow">COR 02</span>
+        <h3 class="col-name">Grafite Estrutural</h3>
+        <span class="col-hex">#3D3D3D</span>
+      </div>
+    </div>
+    <div class="col" id="col2" style="background:#FFDE59; color:#3D3D3D;">
+      <div class="col-content">
+        <span class="col-eyebrow">COR 03</span>
+        <h3 class="col-name">Amarelo Destaque</h3>
+        <span class="col-hex">#FFDE59</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="app.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
