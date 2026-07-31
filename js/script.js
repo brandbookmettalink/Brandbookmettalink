@@ -1,4 +1,3 @@
-
 /* =====================================================================
    METTALINK — script.js
    1. Lenis smooth scroll
@@ -355,18 +354,15 @@ function initSmoothScrollAnchors() {
   });
 }
 
-/* ─── 5. INTERACTIVE COVER BRAND EMBLEM (HIGH-PRECISION POINTER TRACKING) ─── */
+/* ─── 5. INTERACTIVE COVER BRAND EMBLEM (LETTER-BY-LETTER DISSOLVE) ─── */
 function initCoreBrandInteractivity() {
-  const letters = document.querySelectorAll('.interactive-letter');
+  const interactiveEls = document.querySelectorAll('.interactive-letter, .interactive-part');
   
-  letters.forEach(letter => {
-    letter.addEventListener('pointerover', () => {
-      letter.classList.add('is-dissolved');
-    });
-
-    letter.addEventListener('pointerout', () => {
-      letter.classList.remove('is-dissolved');
-    });
+  interactiveEls.forEach(el => {
+    el.addEventListener('mouseenter', () => el.classList.add('is-dissolved'));
+    el.addEventListener('mouseleave', () => el.classList.remove('is-dissolved'));
+    el.addEventListener('pointerover', () => el.classList.add('is-dissolved'));
+    el.addEventListener('pointerout', () => el.classList.remove('is-dissolved'));
   });
 }
 
