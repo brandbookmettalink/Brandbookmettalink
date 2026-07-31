@@ -1,4 +1,3 @@
-
 /* =====================================================================
    METTALINK / CERNE — Stylesheet
    - Brand Tokens & Reset
@@ -917,6 +916,44 @@ nav.wrap {
   width: 100%;
   position: relative;
   z-index: 20;
+}
+
+.hero-logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: clamp(260px, 34vw, 420px);
+  margin: 0 auto;
+  position: relative;
+  z-index: 15;
+}
+
+.hero-combo-vertical-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 8px 28px rgba(1, 56, 148, 0.18));
+  overflow: visible;
+}
+
+.interactive-part,
+.interactive-letter {
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
+  cursor: pointer;
+  transform-origin: center center;
+}
+
+.interactive-part:hover,
+.interactive-part.is-dissolved,
+.interactive-letter:hover,
+.interactive-letter.is-dissolved {
+  opacity: 0 !important;
+  transform: translateY(-8px) scale(0.85) !important;
+  filter: blur(8px) !important;
 }
 
 
@@ -4153,29 +4190,7 @@ footer .wrap a:hover {
   margin-top: 2px;
 }
 
-/* Hero Section Central Logo (Capa - Matched exactly to second screenshot) */
-.hero-logo-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px !important;
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  margin-bottom: 30px;
-}
-.hero-mark-svg {
-  width: clamp(260px, 36vw, 440px) !important;
-  height: auto !important;
-  filter: none !important;
-}
-.hero-wordmark-img {
-  width: clamp(285px, 39vw, 475px) !important;
-  height: auto !important;
-  display: block !important;
-  filter: none !important;
-}
+/* Hero Section em Destaque */
 .hero h1 em, .hero-centered-wrap h1 em {
   color: #2F6FED !important;
   font-style: normal !important;
